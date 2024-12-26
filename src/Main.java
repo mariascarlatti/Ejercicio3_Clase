@@ -13,7 +13,8 @@ public class Main {
         System.out.println("2. Restar");
         System.out.println("3. Multiplicar");
         System.out.println("4. Dividir");
-        System.out.println("5. Salir");
+        System.out.println("5. Elevar al cuadrado");
+        System.out.println("6. Salir");
 
         System.out.println("Seleccione una opción: ");
 
@@ -59,6 +60,12 @@ public class Main {
                     menu();
                     break;
                 case 5:
+                    System.out.println("Ingrese el número a elevar al cuadrado: ");
+                    int i = Integer.parseInt(scanner.nextLine());
+                    System.out.println("El resultado de elevar al cuadrado es: " + operations.cuadrado(i));
+                    menu();
+                    break;
+                case 6:
                     System.out.println("Saliendo...");
                     break;
                 default:
